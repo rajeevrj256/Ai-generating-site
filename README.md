@@ -10,7 +10,7 @@ Users can define the AI's personality and role, prompting it to respond contextu
 This project opens up endless possibilities. Imagine empowering entrepreneurs with an intelligent assistant that understands their brand voice or enabling educators to have a virtual tutor that adapts to each student’s learning style. The potential is incredible!
 ## Demo
 
-Website live on -https://lnkd.in/dce5cB_k
+Website live on -https://lnkd.in/dce5cB_k](https://ai-generating-site-1.onrender.com/
 
 
 
