@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT ||3000;
 
 const apiKey = process.env.apiKey;
-const baseURL =process.env.baseURL;
+const baseURL ='https://api.aimlapi.com/v1';
 
 const api = new OpenAI({
   apiKey,
