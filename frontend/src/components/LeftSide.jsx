@@ -37,7 +37,7 @@ const LeftSide = () => {
         onChange={handleInput2Change}
         placeholder="Enter your prompt"
       />
-      <button onClick={handleFetchData}>Fetch Data</button>
+      <button onClick={handleFetchData}>Generate Data</button>
     </div>
   );
 };
