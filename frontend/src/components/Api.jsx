@@ -7,7 +7,7 @@ export const fetchDataFromAPI = async (aiInput, userInput, setfetchdata) => {
     //console.log("second")
     //console.log(aiInput);
     //console.log(userInput);
-    const response = await fetch('http://localhost:8080/generate-response', {
+    const response = await fetch('https://ai-generating-site.onrender.com/generate-response', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', // Ensure the correct header
