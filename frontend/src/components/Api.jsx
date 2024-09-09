@@ -24,7 +24,7 @@ export const fetchDataFromAPI = async (aiInput, userInput, setfetchdata) => {
 
     const data = await response.json();
     //console.log("response",data.response);
-    if(data.response && data.response.status===429){
+    if(data.response && data.response.status===500){
       setfetchdata("Too Many Request");
       return;
     }
