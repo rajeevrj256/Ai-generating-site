@@ -4,7 +4,7 @@ import { UserInput } from '../store/Input_data';
 import { fetchDataFromAPI } from './Api';
 
 const LeftSide = () => {
-  const { aiInput, setAiInput, userInput, setUserInput, fetchdata, setfetchdata } = useContext(UserInput);
+  const { aiInput, setAiInput, userInput, setUserInput, fetchdata, setfetchdata ,setFetching} = useContext(UserInput);
 
   const handleInput1Change = (e) => setAiInput(e.target.value);
   const handleInput2Change = (e) => setUserInput(e.target.value);
@@ -15,7 +15,9 @@ const LeftSide = () => {
     //console.log(userInput);
     try {
       //console.log("first")
+      setFetching(true);
       await fetchDataFromAPI(aiInput, userInput, setfetchdata);  // Call the API function
+      setFetching(false);
     } catch (error) {
       console.error("Error fetching data:", error.message);
     }
