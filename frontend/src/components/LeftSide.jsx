@@ -9,14 +9,14 @@ const LeftSide = () => {
   const handleInput1Change = (e) => setAiInput(e.target.value);
   const handleInput2Change = (e) => setUserInput(e.target.value);
   
-  // Handle Fetch Data button click
+ 
   const handleFetchData = async () => {
     //console.log(aiInput);
     //console.log(userInput);
     try {
       //console.log("first")
       setFetching(true);
-      await fetchDataFromAPI(aiInput, userInput, setfetchdata);  // Call the API function
+      await fetchDataFromAPI(aiInput, userInput, setfetchdata); 
       setFetching(false);
     } catch (error) {
       console.error("Error fetching data:", error.message);

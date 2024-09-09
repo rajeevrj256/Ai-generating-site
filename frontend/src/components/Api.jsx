@@ -10,9 +10,9 @@ export const fetchDataFromAPI = async (aiInput, userInput, setfetchdata) => {
     const response = await fetch('https://ai-generating-site.onrender.com/generate-response', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json', // Ensure the correct header
+        'Content-Type': 'application/json', 
       },
-      body: JSON.stringify({  // Ensure the body is stringified
+      body: JSON.stringify({  
         systemPrompt:aiInput,
         userPrompt:userInput,
       }),
